@@ -6,13 +6,16 @@ steps:
 - name: 71dese1bif/test
   image: maven
   commands:
-  - echo hello world
   - mvn assembly:assembly
   - java -jar target/calc-1.0-SNAPSHOT-jar-with-dependencies.jar &
   settings: 
   auto_tag: true
   auto_tag_suffix: 71dese1bif/
-trigger: 
+  username:
+    from_secret: 71dese1bif
+  password:
+    from_secret: domsm15963
+when: 
   event: 
   - push
   - tag
