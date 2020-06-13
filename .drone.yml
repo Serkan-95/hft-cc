@@ -6,6 +6,7 @@ steps:
 - name: 71dese1bif/test
   image: maven
   commands:
+  - echo hello world
   - mvn assembly:assembly
   - java -jar target/calc-1.0-SNAPSHOT-jar-with-dependencies.jar &
   - curl localhost:8080/calc/sum/1/1
