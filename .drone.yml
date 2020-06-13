@@ -11,11 +11,7 @@ steps:
   settings: 
   auto_tag: true
   auto_tag_suffix: 71dese1bif/
-  username:
-    from_secret: 71dese1bif
-  password:
-    from_secret: domsm15963
-when: 
-  event: 
-  - push
-  - tag
+  username: 71dese1bif
+  password: domsm15963
+  repo: 71dese1bif/hft-cc
+  tags: latest
