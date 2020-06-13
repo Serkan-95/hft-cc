@@ -7,9 +7,9 @@ steps:
   image: 71dese1bif/vlbackend
   commands:
   - echo hello
-  -mvn assembly:assembly
-  -java -jar target/calc-1.0-SNAPSHOT-jar-with-dependencies.jar &
-  -curl localhost:8080/calc/sum/1/1
+  - mvn assembly:assembly
+  - java -jar target/calc-1.0-SNAPSHOT-jar-with-dependencies.jar &
+  - curl localhost:8080/calc/sum/1/1
   settings:
   auto_tag: true
   auto_tag_suffix: 71dese1bif/
