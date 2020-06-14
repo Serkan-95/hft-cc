@@ -1,0 +1,1 @@
+[![Build Status](https://cloud.drone.io/api/badges/Serkan-95/hft-cc/status.svg)](https://cloud.drone.io/Serkan-95/hft-cc)
